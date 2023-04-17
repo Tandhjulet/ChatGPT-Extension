@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="chat.js" defer></script>
+        <link rel="stylesheet" href="chat.css">
+    </head>
+    <body>
+        <div class="keyWrapper">
+            <h3 class="output">Input</h3>
+            <div class="grow"></div>
+            Token: <input class="key" id="token" type="password" placeholder="Indsæt din token her">
+        </div>
+        <form class="form" id="form">
+            <textarea id="input" rows="10" cols="60" type="text" required autofocus></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+        <hr>
+
+        <div class="keyWrapper">
+            <h3 class="output">Output</h3>
+            <div id="loader" class="loader"></div>
+        </div>
+        <div class="form">
+            <div id="output">Output vil vises her.</div>
+            <button id="copy">Copy Output</button>
+        </div>
+    </body>
+</html>
